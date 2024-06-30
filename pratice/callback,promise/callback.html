@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+        
+        
+        
+//callback hell 
+
+// function delayhello(callback){
+  
+//         setTimeout(() => {
+//             console.log("Name");
+//                 callback();
+//         },1000);  
+
+// }
+// delayhello(function () {console.log('callback called');});
+// console.log("hello");
+// Ans:hello,Name , callback called
+
+// delayhello("Bhavik",() => {
+//     delayhello("Aman",() => {
+//         delayhello("Jay");
+//     });
+// });
+
+
+
+
+//  function getitem(name,nextname){
+//     setTimeout(() => {
+//      console.log("name ",name);
+//      if(nextname){
+//         nextname();
+//      }
+//     },1000);
+//   }
+//   getitem("Bakvas",() =>{
+//       getitem("Nensi" ,() => {  
+//            getitem("Bhavik");
+// });
+// }); 
+
+
+
+
+//  function getData(dataId,getNextData){
+    
+//     setTimeout(() => {
+//    console.log("dataId" , dataId);
+//    if(getNextData){
+//    getNextData();
+//    }
+//     },1000);
+//  }
+//  console.log("fetching data1 ....");
+//  getData(1,() => {
+//     console.log("fetching data2 ...");
+//     getData(2,() => {
+//         console.log("fetching data3 ...");
+//         getData(3);
+//     })
+//  });
+    
+</script>
+</body>
+</html>
